@@ -33,6 +33,7 @@ body {
         opacity: 0;
         transform: translateY(-20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -286,6 +287,7 @@ body {
         opacity: 0;
         transform: translateX(-10px);
     }
+
     to {
         opacity: 1;
         transform: translateX(0);
@@ -333,7 +335,8 @@ body {
     gap: 8px;
 }
 
-.edit-btn, .delete-btn {
+.edit-btn,
+.delete-btn {
     padding: 6px 12px;
     border: none;
     border-radius: 6px;
@@ -380,11 +383,11 @@ body {
     .todo-app {
         padding: 25px;
     }
-    
+
     .header h1 {
         font-size: 2rem;
     }
-    
+
     .stats {
         flex-direction: column;
         gap: 10px;
@@ -395,105 +398,8 @@ body {
         justify-content: space-between;
         gap: 10px;
     }
-    
+
     .clear-btn {
         width: 100%;
     }
-}
-
-body[data-theme="dark"] {
-    color: #e7e7ef;
-    background: linear-gradient(135deg, #1b2a57 0%, #0b1020 100%);
-}
-
-body[data-theme="dark"] .todo-app {
-    background: rgba(20, 20, 28, 0.82);
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.55);
-}
-
-body[data-theme="dark"] .subtitle {
-    color: #a8a8b3;
-}
-
-body[data-theme="dark"] .theme-toggle {
-    background: rgba(255, 255, 255, 0.06);
-    border-color: rgba(255, 255, 255, 0.14);
-    color: #e7e7ef;
-}
-
-body[data-theme="dark"] .stats {
-    background: rgba(255, 255, 255, 0.06);
-    color: #a8a8b3;
-}
-
-body[data-theme="dark"] .delete-all-btn {
-    background: rgba(255, 140, 66, 0.25);
-    color: #ffd4b5;
-}
-
-body[data-theme="dark"] .task-input {
-    background: rgba(255, 255, 255, 0.06);
-    border-color: rgba(255, 255, 255, 0.18);
-    color: #e7e7ef;
-}
-
-body[data-theme="dark"] .task-input:focus {
-    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.25);
-}
-
-body[data-theme="dark"] .filter-btn {
-    background: rgba(255, 255, 255, 0.06);
-    border-color: rgba(255, 255, 255, 0.14);
-    color: #a8a8b3;
-}
-
-body[data-theme="dark"] .filter-btn:hover {
-    border-color: #667eea;
-    color: #9aa6ff;
-}
-
-body[data-theme="dark"] .filter-btn.active {
-    color: white;
-}
-
-body[data-theme="dark"] .task-list::-webkit-scrollbar-track {
-    background: rgba(255, 255, 255, 0.08);
-}
-
-body[data-theme="dark"] .task-list::-webkit-scrollbar-thumb {
-    background: rgba(102, 126, 234, 0.9);
-}
-
-body[data-theme="dark"] .task-item {
-    background: rgba(255, 255, 255, 0.06);
-    border-color: rgba(255, 255, 255, 0.12);
-}
-
-body[data-theme="dark"] .task-item:hover {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
-}
-
-body[data-theme="dark"] .task-text {
-    color: #e7e7ef;
-}
-
-body[data-theme="dark"] .task-text.editing {
-    background: rgba(102, 126, 234, 0.12);
-    border-color: #667eea;
-}
-
-body[data-theme="dark"] .created-at {
-    color: #8f8f9b;
-}
-
-body[data-theme="dark"] .drag-handle {
-    color: #a8a8b3;
-}
-
-body[data-theme="dark"] .task-item.completed .task-text {
-    color: #8f8f9b;
-}
-
-body[data-theme="dark"] .empty-state {
-    color: #a8a8b3;
 }

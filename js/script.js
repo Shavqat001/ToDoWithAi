@@ -7,30 +7,17 @@ const deleteAllBtn = document.getElementById('deleteAllBtn');
 const filterBtns = document.querySelectorAll('.filter-btn');
 const themeToggle = document.getElementById('themeToggle');
 
-let tasks = [];
+let tasks = TodoStorage.loadTasks();
 let currentFilter = 'all';
 let draggingTaskId = null;
 let dragOverTaskId = null;
 
-function loadTasks() {
-    const savedTasks = localStorage.getItem('tasks');
-    if (savedTasks) {
-        tasks = JSON.parse(savedTasks);
-        tasks = tasks.map(task => ({
-            ...task,
-            createdAt: task.createdAt || new Date().toISOString()
-        }));
-    }
-
-    renderTasks();
-}
-
 function saveTasks() {
-    localStorage.setItem('tasks', JSON.stringify(tasks));
+    TodoStorage.saveTasks(tasks);
 }
 
 function generateId() {
-    return Date.now().toString(36) + Math.random().toString(36).substr(2);
+    return TodoStorage.generateId();
 }
 
 function addTask() {
@@ -152,22 +139,11 @@ function updateTaskCount() {
 }
 
 function formatCreatedAt(iso) {
-    const date = new Date(iso);
-    if (Number.isNaN(date.getTime())) return '';
-    return new Intl.DateTimeFormat('ru-RU', {
-        year: 'numeric',
-        month: '2-digit',
-        day: '2-digit',
-        hour: '2-digit',
-        minute: '2-digit'
-    }).format(date);
+    return TodoStorage.formatCreatedAt(iso);
 }
 
 function arrayMove(array, fromIndex, toIndex) {
-    const next = array.slice();
-    const [item] = next.splice(fromIndex, 1);
-    next.splice(toIndex, 0, item);
-    return next;
+    return TodoStorage.arrayMove(array, fromIndex, toIndex);
 }
 
 function renderTasks() {
@@ -205,7 +181,7 @@ function renderTasks() {
                     <span class="task-text">${escapeHtml(task.text)}</span>
                     <div class="task-actions">
                         <button class="edit-btn" type="button">
-                            <img src="./icons/red-trash-can-icon.svg" width="18" alt="Delete">
+                            <img src="./icons/pencil.svg" width="18" alt="Edit">
 
                         </button>
                         <button class="delete-btn" type="button">
@@ -349,4 +325,4 @@ filterBtns.forEach(btn => {
 });
 
 initTheme();
-loadTasks();
+renderTasks();
