@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./img/ToDoApp.jpg" alt="ToDoApp Logo" width="200" />
+</p>
+
 # ToDoWithAi (Todo List)
 
 Это простой список задач с хранением данных в `localStorage` прямо в браузере. Приложение позволяет:
@@ -14,6 +18,9 @@
   - при клике `Очистить выполненные` показывается confirm
   - при клике `Удалить все` показывается confirm
 
+<img src="./img/example_view_1.png" width="400"/>
+<img src="./img/example_view_2.png" width="400"/>
+
 ## Где хранится состояние
 
 Все задачи сохраняются в браузере в ключе `localStorage` под названием `tasks` (массив объектов с полями `id`, `text`, `completed`, `createdAt`).
@@ -25,3 +32,4 @@
 - `css/theme.css` — стили тёмной темы
 - `js/storage.js` — утилиты для работы с `localStorage`, датами и сортировкой
 - `js/script.js` — основной код интерфейса (рендер задач, обработчики кликов, drag-and-drop)
+
