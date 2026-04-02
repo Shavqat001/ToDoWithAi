@@ -12,6 +12,7 @@
             <div class="header">
                 <h1>📝 Мои Задачи</h1>
                 <p class="subtitle">Организуйте свою жизнь</p>
+                <button id="themeToggle" class="theme-toggle" type="button" aria-label="Переключить тему" title="Тема">🌙</button>
             </div>
             
             <div class="input-section">
@@ -33,7 +34,10 @@
             </div>
 
             <div class="stats">
-                <span id="taskCount">0 задач</span>
+                <div class="stats-left">
+                    <button id="deleteAllBtn" class="delete-all-btn" type="button" title="Удалить все задачи">Удалить все</button>
+                    <span id="taskCount">0 задач</span>
+                </div>
                 <button id="clearCompleted" class="clear-btn">Очистить выполненные</button>
             </div>
 
