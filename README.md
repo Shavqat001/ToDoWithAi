@@ -21,8 +21,8 @@
 ## 📱 Demo
 
 <p align="center">
-  <img src="./img/example_view_1.png" width="300"/>
-  <img src="./img/example_view_2.png" width="300"/>
+  <img src="./img/example_view_1.png" width="300" style="border-radius: 20px; box-shadow: 0 0 16px -10px #fff;margin-right: 10px"/>
+  <img src="./img/example_view_2.png" width="300" style="border-radius: 20px; box-shadow: 0 0 16px -10px #fff;"/>
 </p>
 
 ## Где хранится состояние
