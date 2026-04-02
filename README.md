@@ -17,9 +17,11 @@
 - массовые действия с предупреждениями:
   - при клике `Очистить выполненные` показывается confirm
   - при клике `Удалить все` показывается confirm
-
-<img src="./img/example_view_1.png" width="400"/>
-<img src="./img/example_view_2.png" width="400"/>
+  
+<p align="center">
+  <img src="./img/example_view_1.png" width="300"/>
+  <img src="./img/example_view_2.png" width="300"/>
+</p>
 
 ## Где хранится состояние
 
