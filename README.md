@@ -1,5 +1,5 @@
-<p align="center" style="border-radius: 20px">
-  <img src="./img/ToDoApp.jpg" alt="ToDoApp Logo" width="200" />
+<p align="center">
+  <img src="./img/ToDoApp.jpg" alt="ToDoApp Logo" width="200" style="border-radius: 20px; box-shadow: 0 0 16px -10px #fff;" />
 </p>
 
 # ToDoWithAi (Todo List)
@@ -17,6 +17,8 @@
 - массовые действия с предупреждениями:
   - при клике `Очистить выполненные` показывается confirm
   - при клике `Удалить все` показывается confirm
+
+## 📱 Demo
 
 <p align="center">
   <img src="./img/example_view_1.png" width="300"/>

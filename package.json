@@ -1,0 +1,12 @@
+{
+  "name": "todo-with-ai",
+  "version": "1.0.0",
+  "description": "Simple Todo List app using localStorage",
+  "scripts": {
+    "start": "echo \"Opening index.html in your browser\" && start index.html",
+    "dev": "echo \"No dev server needed\""
+  },
+  "keywords": ["todo", "vanilla-js"],
+  "author": "Shavqat",
+  "license": "MIT"
+}
