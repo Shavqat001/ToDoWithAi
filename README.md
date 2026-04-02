@@ -1,4 +1,4 @@
-<p align="center">
+<p align="center" style="border-radius: 20px">
   <img src="./img/ToDoApp.jpg" alt="ToDoApp Logo" width="200" />
 </p>
 
@@ -17,7 +17,7 @@
 - массовые действия с предупреждениями:
   - при клике `Очистить выполненные` показывается confirm
   - при клике `Удалить все` показывается confirm
-  
+
 <p align="center">
   <img src="./img/example_view_1.png" width="300"/>
   <img src="./img/example_view_2.png" width="300"/>
